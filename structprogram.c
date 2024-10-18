@@ -9,29 +9,55 @@ struct student {
     char dob[20];
     int age;
     char gender;
+    int marks[5];
     
 };
 
 
 int main() {
+struct student studentArrya[10];
+
+for(int i=0; i<1; i++)
+{
+    printf("Enter Student %d Name, Rollno, PhoneNumber, DateofBirth, Age, Gender  \n", i+1);
+    scanf("%s %d %lf %s %d %c",
+    studentArrya[i].name, 
+    &studentArrya[i].rollno, 
+    &studentArrya[i].phoneno, 
+    studentArrya[i].dob, 
+    &studentArrya[i].age, 
+    &studentArrya[i].gender );
+
+         printf("Enter 5 Student Marks ");
+    for(int j=0; j<5; j++)
+    {
+
+         scanf("%d",&studentArrya[i].marks[j]);
+    }
+}
+
+
+
+for(int i=0; i<1; i++)
+{
     
-    struct student arun ={"arun", 123, 9582478893, "29 july 2000", 24 , 'M'};
-
-    printf("name : %s \n ", arun.name);       
-printf("Date Of birth : %s \n ", arun.dob);
-
-printf("Roll Number  : %d \n ", arun.rollno);
-printf("phone : %.0f \n ", arun.phoneno);
-
-
-printf("age : %d \n ", arun.age);
-
-printf("gender : %c \n ", arun.gender);
+printf(" %s %d  %.0lf %s %d %c \n", 
+studentArrya[i].name , 
+studentArrya[i].rollno,
+studentArrya[i].phoneno, 
+studentArrya[i].dob, 
+studentArrya[i].age, 
+studentArrya[i].gender );
 
 
+for(int j=0; j<5; j++)
+{
+printf("marks  %d\n", studentArrya[i].marks[j]);
 
-
-
-
+}
+}
+  
+  
+  
     return 0;
 }
