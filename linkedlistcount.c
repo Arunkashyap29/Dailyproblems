@@ -1,5 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
+
+
+
+
   struct Node {
 	 int data;
 	 struct Node *link;
@@ -14,6 +18,8 @@ start=temp;
 temp->link=NULL;
 return start;
 }
+
+
 
 
 
@@ -33,12 +39,20 @@ struct Node* addAtend(struct Node *start,int data) {
    return start;
 }
 
-   
+
+
+
         int main () {
-		int n;
+		int n,a,sn,searchnode, count=0;
 		struct Node * start,*tempPtr = NULL;
 		printf("enter the number of nodes\n");
 		scanf("%d",&n);
+		
+		
+        
+
+
+
 		
 		// Value insertion logic
 			start = addAtBeg(start,5);
@@ -46,11 +60,42 @@ struct Node* addAtend(struct Node *start,int data) {
 			start = addAtend(start,5*i);
 		}
 		
+
+
+	
 		// Value to be printed;
 		tempPtr = start;
 		while(tempPtr != NULL) {
-			printf("%d\t",tempPtr->data);
+			printf("%d\t\n",tempPtr->data);
+
+			count = count+1;
+			
 			tempPtr = tempPtr->link;
-		}
+
+			
+	}
+
+
+printf(" total number of node is : %d\t\n",count);
+
+		tempPtr = start;
+
+	printf("enter the number to search nodes\n");
+		scanf("%d",&sn);
+	while(tempPtr != NULL) {
+			if(sn==tempPtr->data)
+			{
+				printf("yes");
+				break;
+			}
+
+			tempPtr = tempPtr-> link;
+	}
+
+
+
+
+
+	
 		return 0;
 			}
