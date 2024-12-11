@@ -1,0 +1,65 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    background: linear-gradient(to  left, #ff7e5f, #feb47b);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+img{
+    width: 80px;
+padding-right: 300px;
+float: left;
+padding-left: 50px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+}
+nav a:hover{
+    color: black;
+}
+
+select a{
+ color: black;
+}
+@media screen and (max-width: 700px){
+    
+    img{
+     padding: 20px;
+     width: 40px;
+    }
+nav a{
+    font-size: 12px;
+    padding: 5px;
+}
+
+
+
+}
+
+.second-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 8%;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+    
+}

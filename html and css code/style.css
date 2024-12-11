@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topheader{
+    background: linear-gradient(to left, #ff7e5f, #feb47b);
+    margin: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+.introsection{
+
+    background-color: white;
+    padding: 30px 20px;
+    margin: 30px 50px;
+    border-radius: 10px;
+  
+}
+
+
+.maincard{
+
+    background-color: white;
+    padding: 30px 40px;
+    margin: 30px 50px;
+    border-radius: 10px;
+
+}
+
+
+.cardone{
+
+    border: 3px solid rgb(38, 160, 38);
+    background-color: rgb(191, 234, 191);
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin: 40px 0px;
+}
+.cardone address{
+    display: block;
+    
+}
+address a{
+    text-decoration: none;
+}
+
+address{
+    padding: 5px;
+}
+
+.maintable th{
+
+     background-color: green;
+     color: white;
+     padding: 10px 50px;
+     text-align: center;
+     
+}
+
+
+.maintable tr td{
+
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  
+}
+
+.maintable a{
+    text-decoration: none;
+}
+
+.maintable{
+    
+}
+
+footer{
+
+    background: linear-gradient(to left, #3030fa, #7799ea);
+    margin: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+<link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+ background-color:bisque;
+ /* display: flex; */
+ justify-content: center;
+ /* align-items:start; */
+margin: 40px;
+padding: 0;
+height: 100vh;
+        }
+
+
+        .cardbox{
+            background-color: aliceblue;
+            padding: 80px;
+            border-radius: 20px;
+            border: 2px solid black;
+        
+            box-shadow:aqua;
+            text-align: center;
+            align-items: center;
+            margin: 30vh;
+width: 300px;
+/* height: 100px; */
+
+        }
+
+        h2{
+            color: brown;
+                }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input{
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+        }
+
+
+        button{
+            padding: 8px;
+            background-color:rgb(253, 69, 7);
+            color: white;
+            font-weight: 600;
+            border: 0px;
+            border-radius: 20px;
+            
+
+        }
+
+
+        button:hover{
+            background-color: brown;
+        }
+
+
+        /* .block-example,p{
+            background-color:darkcyan;
+            padding: 20px;
+            color: white;
+            width: 250px;
+            margin: 10px;
+            display: block;
+
+
+            display: inline;
+            width: 250px;
+
+            text-align: center;
+            padding: 10px 120px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            margin: 10px;
+           
+        }
+ */
+
+        
+
+
+
+
+.block {
+            display: block;
+            width: 200px;
+            text-align: center;
+            padding: 10px;
+            background-color: lightblue;
+            margin-bottom: 10px;
+
+          
+        }
+
+        .block::after{
+ content: "<-EXTING TEXT";
+ color: blue;
+        }
+
+        .inline {
+            display: inline;
+            padding: 10px;
+            background-color: lightcoral;
+            margin-right: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="cardbox">
+        <h2>LOGIN FORM</h2>
+
+        <form action="">
+
+            <label for="name">Username</label>
+            <input type="text" name="Username" placeholder="Username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="" placeholder="Password">
+            <button type="submit">submit</button>
+
+
+        </form>
+
+
+
+    
+    </div>
+
+
+
+    <div class="block-example">
+    hello guys 
+    </div>
+    <div class="block-example">
+        this is text
+    </div>
+    <div class="block-example">
+    hii guys
+
+    </div>
+
+
+    <h2>Example with Display: Block</h2>
+    <div class="block">Block Element 1</div>
+    <div class="block">Block Element 2</div>
+
+    <h2>Example with Display: Inline</h2>
+    <span class="inline">Inline Element 1</span>
+    <span class="inline">Inline Element 2</span>
+
+<div style="background-color: yellow;">
+
+    <h1 style="color: red;">this is red heading</h1>
+    <p style="font-size: smaller; padding-bottom: 50px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae iste, consectetur exercitationem fugit officiis adipisci? Corrupti, inventore dolor praesentium officia saepe sed ipsam pariatur asperiores sit accusamus aperiam recusandae!</p>
+
+
+</div>
+
+
+<table>
+<tr></tr>
+
+    
+</table>
+    
+<ul style="list-style-type:lower-roman;"> 
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>blog</li>
+
+</ul>
+
+
+
+
+</body>
+
+</html>
