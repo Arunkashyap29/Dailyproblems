@@ -1,12 +1,15 @@
 @font-feature-values
 *{
-    
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
 }
 
 body{
     margin: 0px;
     padding: 0px;
     font-family:Arial, Helvetica, sans-serif;
+    background-color: aliceblue;
 }
 
 
@@ -50,38 +53,64 @@ header{
    display: flex;  
    justify-content: center;
    
+   
 }
 
 .signinform form{
-    background-color: aqua;
+    background-color: white;
     padding: 40px;
     border-radius: 10px;
-    margin-top: 30px;
-    width: 40%;
-    
+    margin: 30px;
+    /* width: 30%; */
+    width: 30vw;
+    box-shadow: 1px 1px 10px     rgb(88, 87, 87);
     
     
 }
 
 .signinform form label{
-    color: gray;
+    color: rgb(72, 72, 72);
+    margin: 5px;
+    
 }
 
 .signinform form input{
-   /* padding: 5px; */
+   padding: 5px;
    display: flex;
    align-items: center;
    padding: 10px 5px;
    gap: 5px;
-    width: 100%;
+    width: 96%;
+    border: 1px solid rgb(150, 148, 148);
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .signinform form h3{
     font-size: 30px;
     text-align: center;
+    margin-top: 10px;
+
 }
 
+.signinform button{
+    padding: 10px 10px;
+    text-align: center;
+    width: 100%;
+    margin: 5px 0;
+    background-color: rgb(31, 31, 184);
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: 0px;
 
+}
+
+.signinform p,a{
+    text-decoration: none;
+    text-align: center;
+
+}
 
 
 
@@ -93,6 +122,62 @@ header{
         text-transform: uppercase;
     }
     
+    .signinform form{
+        width: 50vw;
+    }
+
+
 }
 
 
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    
+}
+
+.childiv{
+    padding: 20px;
+    margin: 20px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(105, 105, 105);
+}
+
+@media (max-width:750px){
+
+    .container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width:400px) {
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}
+
+
+footer{
+    background-color: black;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   position:sticky;
+}
+
+
+footer div{
+    display: flex;
+    color: white;
+  
+}
