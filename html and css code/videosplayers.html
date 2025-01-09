@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Videos Container</title>
+    <style>
+       
+
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+          
+            max-width: 100vw;
+            
+        }
+
+        .video-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px white;
+            overflow: hidden;
+            width: 200px;
+            aspect-ratio: 9 / 16;
+            position: relative;
+            margin: 10px;
+            
+        }
+
+        .video-card video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-card:hover .video-overlay {
+            opacity: 1;
+        }
+
+        .video-overlay button {
+            display:none;
+            background-color: #ff4b2b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="video-container">
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/houston-kold-type-edit.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/houston-style-2.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/motion-graphics.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        
+                <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/motion-graphics.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/motion-graphics.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/houston-kold-type-edit.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/houston-style-2.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/motion-graphics.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        
+                <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/motion-graphics.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        
+        <div class="video-card">
+            <video src="https://vultrastudio.in/wp-content/uploads/2025/01/motion-graphics.mp4" muted autoplay loop></video>
+            <div class="video-overlay">
+                <button>Play Again</button>
+            </div>
+        </div>
+        
+        <!-- Add more video cards as needed -->
+    </div>
+    
+    
+    
+    
+   
+
+</body>
+</html>

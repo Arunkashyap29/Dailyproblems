@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto ;
+}
+
+
+
+
+.header-section{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto auto 600px auto auto  auto auto;
+   align-items: center;
+   padding: 10px;
+   background-color: #131921;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.address{
+    display: flex;
+   align-items: center;
+    gap: 10px;
+}
+.add-icon img{
+    width: 20px;
+    color: white;
+}
+
+.add-text{
+    color: white
+}
+
+.search{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #131921;
+    margin: 5px;
+
+}
+.search input{
+padding: 11px;
+border-radius: 5px 0 0 5px;
+width: 100%;
+margin-right: -10px;
+border-style: none;
+
+}
+.search-btn{
+    background-color:#FEBD69;
+
+    border-radius: 0 5px 5px  0;
+    border-style: none;
+
+    width: 50px;
+}
+.search-btn img{
+    width: 20px;
+padding: 7px;
+    color: white;
+}
+
+.language select{
+   background-color: #131921;
+   border: none;
+   color: white;
+   font-size: 14px;
+   font-weight: 700;
+   
+}
+
+.language  select option{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 50px;
+   
+}
+
+.sign-in{
+    color: white;
+}
+.sign-in-dropdwn{
+
+    display: flex;
+    color: black;
+
+    background-color: rgb(255, 255, 255);
+    display: none;
+    width: 50%;    
+    box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+
+.sign-in-dropdwn ul{
+    display: flex;
+    flex-direction: column;
+list-style: none;
+align-items: center;
+text-align: center;
+gap: 10px;
+
+}
+
+.sign-in-dropdwn ul li:hover{
+    background-color: black;
+    color: white;
+    width: 100%;
+    
+}
+
+.sign-in:hover .sign-in-dropdwn{
+    display: block;
+    
+}
+
+.cart{
+    display: flex;
+    gap: 10px;
+    
+}
+
+.cart img{
+    width: 30px;
+    height: 30px;
+}
+
+.return-order{
+    color: white;
+}
+
+.cart{
+
+    color: white;
+}
+
+.secondnavbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #232F3E;
+    align-items: center;
+}
+
+.humberger ul{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.humberger ul img{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.humberger ul li{
+    list-style: none;
+
+}
+.humberger ul li a{
+ text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+   
+    list-style: none;
+    padding: 10px;
+    color: rgb(246, 243, 243);
+    font-size: 14px;
+    font-weight: 700;
+}   

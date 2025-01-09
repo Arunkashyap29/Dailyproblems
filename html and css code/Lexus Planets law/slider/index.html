@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-Benz Style Slider</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: hidden;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Slider Styles */
+        .slider {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.8s ease-in-out;
+        }
+
+        .slide {
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* Slight background overlay for readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2rem;
+            }
+            .content p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider" id="slider">
+        <!-- Slide 1 -->
+        <div class="slide" style="background-image: url('https://www.mercedes-benz.com/en/_jcr_content/root/herostage/image/MQ7-0-image-20211111131546/01-mercedes-eqe-edition-1-2560x1440.jpeg');">
+            <div class="content">
+                <h1>Because it's Mercedes-Benz.</h1>
+                <p>The reason why we always go the extra mile.</p>
+                <a href="#" class="btn">Discover More</a>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" style="background-image: url('https://www.mercedes-benz.com/en/_jcr_content/root/herostage/image/MQ7-0-image-20230426132117/mercedes-eqs-sedan-highlights-2560x1440.jpeg');">
+            <div class="content">
+                <h1>Luxury Redefined</h1>
+                <p>Discover the pinnacle of innovation, style, and performance.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide" style="background-image: url('https://www.mercedes-benz.com/en/_jcr_content/root/herostage/image/MQ7-0-image-20230926112008/e-class-all-terrain-highlights-2560x1440.jpeg');">
+            <div class="content">
+                <h1>Future of Mobility</h1>
+                <p>Driving innovation and sustainability for a better tomorrow.</p>
+                <a href="#" class="btn">Explore Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        window.addEventListener('wheel', (event) => {
+            if (event.deltaY > 0) {
+                // Scroll down
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                }
+            } else {
+                // Scroll up
+                if (currentSlide > 0) {
+                    currentSlide--;
+                }
+            }
+            slider.style.transform = `translateY(-${currentSlide * 100}vh)`;
+        });
+
+        // Handle resizing for better mobile responsiveness
+        window.addEventListener('resize', () => {
+            slider.style.transform = `translateY(-${currentSlide * 100}vh)`;
+        });
+    </script>
+</body>
+</html>
