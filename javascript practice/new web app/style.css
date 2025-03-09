@@ -1,0 +1,9 @@
+section {
+    background: green;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 20vh;
+    align-items: center;
+    
+}
+
